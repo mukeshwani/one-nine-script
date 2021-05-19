@@ -1,3 +1,4 @@
+mkdir /home/bitnami/oneninescripts && cd oneninescripts
 wget https://raw.githubusercontent.com/mukeshwani/one-nine-script/main/bitnami-file-reset-cron.sh
 wget https://github.com/mukeshwani/one-nine-script/raw/main/onenineInstanceCreation.sh
 chmod +x bitnami-file-reset-cron.sh && chmod +x onenineInstanCreation.sh
