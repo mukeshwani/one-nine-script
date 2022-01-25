@@ -9,7 +9,7 @@ chown -R bitnami:bitnami /home/bitnami/oneninescripts/ && chmod +x bitnami-file-
 ```
 ## Usage for Ubuntu based OpenLiteSpeed WordPress instance creation
 ```bash
-mkdir /home/bitnami/oneninescripts && cd /home/bitnami/oneninescripts
+mkdir /home/ubuntu/oneninescripts && cd /home/ubuntu/oneninescripts
 wget -q https://raw.githubusercontent.com/mukeshwani/one-nine-script/main/ols_php_tweaks.sh
 chmod u+x ols_php_tweaks.sh
 ./ols_php_tweaks.sh > /dev/null 2>&1
