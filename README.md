@@ -20,8 +20,8 @@ chmod u+x ols_php_tweaks.sh
 wget https://raw.githubusercontent.com/litespeedtech/ols1clk/master/ols1clk.sh && bash ols1clk.sh --wordpressplus whfb.live --quiet > /home/ubuntu/output.txt
 mkdir /home/ubuntu/oneninescripts && cd /home/ubuntu/oneninescripts
 wget -q https://raw.githubusercontent.com/mukeshwani/one-nine-script/main/ols_php_tweaks.sh
-chmod u+x ols_php_tweaks.sh 1024
-./ols_php_tweaks.sh > /dev/null 2>&1
+chmod u+x ols_php_tweaks.sh
+./ols_php_tweaks.sh MEMBORY_VALUE > /dev/null 2>&1
 ```
 ##
 ```
