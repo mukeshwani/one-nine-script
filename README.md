@@ -16,7 +16,7 @@ chmod u+x ols_php_tweaks.sh
 ```
 ## If you need to increase the php memory_limit property then add the correct memory value as a parameter into the script as shown below
 ```bash
-mkdir /home/bitnami/oneninescripts && cd /home/bitnami/oneninescripts
+mkdir /home/ubuntu/oneninescripts && cd /home/ubuntu/oneninescripts
 wget -q https://raw.githubusercontent.com/mukeshwani/one-nine-script/main/ols_php_tweaks.sh
 chmod u+x ols_php_tweaks.sh 1024
 ./ols_php_tweaks.sh > /dev/null 2>&1
