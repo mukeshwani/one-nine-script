@@ -1,7 +1,6 @@
 #!/bin/bash
 
-homePath='/Users/mukeshwani/OneDrive/dev/ols_scripts/'
-phpConfPath='/Users/mukeshwani/OneDrive/dev/ols_scripts/usr/local/lsws/lsphp80/etc/php/8.0/litespeed/php.ini'
+phpConfPath='/usr/local/lsws/lsphp80/etc/php/8.0/litespeed/php.ini'
 memoryLimit='128M'
 if [ -z $1 ]
 then
