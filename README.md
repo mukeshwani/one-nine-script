@@ -18,5 +18,11 @@ wget -q https://raw.githubusercontent.com/mukeshwani/one-nine-script/main/ols_ph
 chmod u+x ols_php_tweaks.sh
 ./ols_php_tweaks.sh 256M > /dev/null 2>&1
 service lsws restart && killall lsphp
+
+apt install unzip
+cd /usr/local/lsws/Example/html
+wget https://files.phpmyadmin.net/phpMyAdmin/5.1.2/phpMyAdmin-5.1.2-all-languages.zip
+unzip phpMyAdmin-5.1.2-all-languages.zip
+mv phpMyAdmin-5.1.2-all-languages phpmyadmin
 ```
 ##
