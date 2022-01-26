@@ -25,5 +25,5 @@ usermod -aG wordpress nobody
 
 chown -R nobody:wordpress /usr/local/lsws/wordpress
 
-find /usr/local/wordpress -type d -exec chmod 0775 {} \;
-find /usr/local/wordpress -type f -exec chmod 0664 {} \;
+find /usr/local/lsws/wordpress -type d -exec chmod 0775 {} \;
+find /usr/local/lsws/wordpress -type f -exec chmod 0664 {} \;
