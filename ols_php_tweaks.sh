@@ -17,3 +17,13 @@ sed  -e '/upload_max_filesize/s/.*/upload_max_filesize = 200M/' \
 -e "/memory_limit/s/.*/memory_limit = $memoryLimit/" \
 -i.bak $phpConfPath
 
+#setup permissions
+groupadd wordpress
+
+usermod -aG wordpress ubuntu
+usermod -aG wordpress nobody
+
+chown -R nobody:wordpress /usr/local/lsws/wordpress
+
+find /usr/local/wordpress -type d -exec chmod 0775 {} \;
+find /usr/local/wordpress -type f -exec chmod 0664 {} \;
