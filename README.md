@@ -16,7 +16,7 @@ wget https://raw.githubusercontent.com/litespeedtech/ols1clk/master/ols1clk.sh &
 mkdir /home/ubuntu/oneninescripts && cd /home/ubuntu/oneninescripts
 wget -q https://raw.githubusercontent.com/mukeshwani/one-nine-script/main/ols_php_tweaks.sh
 chmod u+x ols_php_tweaks.sh
-./ols_php_tweaks.sh 256 > /dev/null 2>&1
+./ols_php_tweaks.sh 256M > /dev/null 2>&1
 service lsws restart && killall lsphp
 ```
 ##
