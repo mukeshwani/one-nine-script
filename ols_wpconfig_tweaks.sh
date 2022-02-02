@@ -1,6 +1,6 @@
 #!/bin/bash
 #wpConfPath='wp-config.php'
-wpConfPath='wp-config.php'
+wpConfPath='/usr/local/lsws/wordpress/wp-config.php'
 
 #if ( defined( 'WP_CLI' ) ) {
 #        $_SERVER['HTTP_HOST'] = '127.0.0.1';
