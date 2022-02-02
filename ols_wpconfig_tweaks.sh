@@ -10,7 +10,7 @@ wpConfPath='/usr/local/lsws/wordpress/wp-config.php'
 #define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/' );
 protocolCode="\$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? 'https' : 'http';"
 
-sed -i "/.*That's all, stop editing! Happy publishing.*/i \\
+sed -i.bak "/.*That's all, stop editing! Happy publishing.*/i \\
 $protocolCode \\
 // Set SITEURL and HOME using a dynamic protocol. \\
 define('WP_SITEURL', \$protocol . '://' . \$_SERVER['HTTP_HOST']); \\
