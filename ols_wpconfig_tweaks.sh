@@ -14,6 +14,6 @@ sed -i.bak "/.*That's all, stop editing! Happy publishing.*/i \\
 $serverHost \\
 $protocolCode \\
 // Set SITEURL and HOME using a dynamic protocol. \\
-define('WP_SITEURL', \$protocol . '://' . \$hostName; \\
+define('WP_SITEURL', \$protocol . '://' . \$hostName); \\
 define('WP_HOME', \$protocol . '://' . \$hostName); \\
 " $wpConfPath
