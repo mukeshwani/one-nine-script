@@ -17,6 +17,12 @@ sed  -e '/upload_max_filesize/s/.*/upload_max_filesize = 200M/' \
 -e "/memory_limit/s/.*/memory_limit = $memoryLimit/" \
 -i.bak $phpConfPath
 
+#setup php modules
+apt-get update
+apt-get install lsphp80-imagick lsphp80-intl -y
+
+#install lscache plugin
+sudo -u ubuntu -i -- wp plugin install litespeed-cache --activate
 #setup permissions
 groupadd wordpress
 

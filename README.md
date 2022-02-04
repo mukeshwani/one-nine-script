@@ -22,7 +22,7 @@ cd /home/ubuntu/oneninescripts
 wget -q https://raw.githubusercontent.com/mukeshwani/one-nine-script/main/ols_wpconfig_tweaks.sh
 chmod u+x ols_wpconfig_tweaks.sh
 ./ols_wpconfig_tweaks.sh > /dev/null 2>&1
-apt install unzip
+apt install unzip -y
 cd /usr/local/lsws/Example/html
 wget https://files.phpmyadmin.net/phpMyAdmin/5.1.2/phpMyAdmin-5.1.2-all-languages.zip
 unzip phpMyAdmin-5.1.2-all-languages.zip

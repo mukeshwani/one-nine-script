@@ -8,11 +8,12 @@ wpConfPath='/usr/local/lsws/wordpress/wp-config.php'
 
 #define( 'WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] . '/' );
 #define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/' );
-protocolCode="\$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? 'https' : 'http';"
-
+protocolCode="\$protocol = (!empty(\$_SERVER['HTTPS']) && \$_SERVER['HTTPS'] !== 'off' || \$_SERVER['SERVER_PORT'] == 443) ? 'https' : 'http';"
+serverHost="\$hostName = isset( \$_SERVER['HTTP_HOST'] ) ? \$_SERVER['HTTP_HOST'] : \$_SERVER['SERVER_NAME'];"
 sed -i.bak "/.*That's all, stop editing! Happy publishing.*/i \\
+$serverHost \\
 $protocolCode \\
 // Set SITEURL and HOME using a dynamic protocol. \\
-define('WP_SITEURL', \$protocol . '://' . \$_SERVER['HTTP_HOST']); \\
-define('WP_HOME', \$protocol . '://' . \$_SERVER['HTTP_HOST']); \\
+define('WP_SITEURL', \$protocol . '://' . \$hostName; \\
+define('WP_HOME', \$protocol . '://' . \$hostName); \\
 " $wpConfPath
