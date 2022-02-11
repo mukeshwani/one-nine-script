@@ -22,7 +22,7 @@ apt-get update
 apt-get install lsphp80-imagick lsphp80-intl -y
 
 #install lscache plugin
-sudo -u ubuntu -i -- wp plugin install litespeed-cache --activate
+sudo -u ubuntu -i -- wp plugin install litespeed-cache
 #setup permissions
 groupadd wordpress
 
