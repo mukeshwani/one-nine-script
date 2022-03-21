@@ -10,6 +10,7 @@ chown -R bitnami:bitnami /home/bitnami/oneninescripts/ && chmod +x bitnami-file-
 
 ## Usage for Ubuntu based OpenLiteSpeed WordPress instance creation.
 ## The ols 1 click install info will be saved in /home/ubuntu/output.txt
+## WordPress installation: 
 ### If you need to increase the php memory_limit property then add the correct memory value as a parameter into the script as shown below.
 ```bash
 wget https://raw.githubusercontent.com/litespeedtech/ols1clk/master/ols1clk.sh && bash ols1clk.sh --wordpress --quiet > /home/ubuntu/output.txt
@@ -24,8 +25,8 @@ chmod u+x ols_wpconfig_tweaks.sh
 ./ols_wpconfig_tweaks.sh > /dev/null 2>&1
 apt install unzip -y
 cd /usr/local/lsws/Example/html
-wget https://files.phpmyadmin.net/phpMyAdmin/5.1.2/phpMyAdmin-5.1.2-all-languages.zip
-unzip phpMyAdmin-5.1.2-all-languages.zip
-mv phpMyAdmin-5.1.2-all-languages phpmyadmin
+wget https://www.phpmyadmin.net/downloads/phpMyAdmin-latest-english.zip
+unzip phpMyAdmin-latest-english.zip
+mv phpMyAdmin-*/ phpmyadmin/
 ```
 ##
