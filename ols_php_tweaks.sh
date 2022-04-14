@@ -28,6 +28,7 @@ groupadd wordpress
 
 usermod -aG wordpress ubuntu
 usermod -aG wordpress nobody
+usermod -aG nogroup ubuntu
 
 chown -R nobody:wordpress /usr/local/lsws/wordpress
 
