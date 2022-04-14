@@ -1,5 +1,5 @@
 #!/bin/bash
-httpdConfPath='httpd_config.conf'
+httpdConfPath='/usr/local/lsws/conf/httpd_config.conf'
 
 grep -q -e 'autoLoadHtaccess' $httpdConfPath || sed -e '/^tuning.*{.*/iautoLoadHtaccess          1' -i.bak $httpdConfPath
 sed -e '/^extprocessor.*lsphp.*{/,/^}/ s/maxConns.*/maxConns                35/' \
