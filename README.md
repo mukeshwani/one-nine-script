@@ -13,7 +13,7 @@ chown -R bitnami:bitnami /home/bitnami/oneninescripts/ && chmod +x bitnami-file-
 ## WordPress installation: 
 ### If you need to increase the php memory_limit property then add the correct memory value as a parameter into the script as shown below.
 ```bash
-wget https://raw.githubusercontent.com/litespeedtech/ols1clk/master/ols1clk.sh && bash ols1clk.sh --wordpress --quiet > /home/ubuntu/output.txt
+wget https://raw.githubusercontent.com/litespeedtech/ols1clk/master/ols1clk.sh && bash ols1clk.sh --lsphp 80 --wordpress --quiet > /home/ubuntu/output.txt
 mkdir /home/ubuntu/oneninescripts && cd /home/ubuntu/oneninescripts
 wget -q https://raw.githubusercontent.com/mukeshwani/one-nine-script/main/ols_php_tweaks.sh
 chmod u+x ols_php_tweaks.sh
